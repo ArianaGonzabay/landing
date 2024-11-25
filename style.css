@@ -25,39 +25,41 @@ CSS STRUCTURE:
 body {
   --heading-font: "Marcellus", Roboto, sans-serif;
   --heading-font-weight: 400;
-  --heading-color: #111;
+  --heading-color: #FF5722; /* Naranja vibrante */
   --heading-line-height: 1.24;
 
-  --swiper-theme-color: #8C907E;
+  --swiper-theme-color: #FFC107; /* Amarillo intenso */
 
   /* bootstrap */
   --bs-body-font-family: "Jost", Roboto, sans-serif;
   --bs-body-font-size: 18px;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
-  --bs-body-color: #8f8f8f;
-  --bs-body-color-rgb: 143, 143, 143;
+  --bs-body-color: #263238; /* Azul marino profundo */
+  --bs-body-color-rgb: 38, 50, 56;
 
-  --bs-primary: #8C907E;
-  --bs-secondary: #6c757d;
-  --bs-black: #111;
-  --bs-light: #F1F1F0;
-  --bs-dark: #212529;
-  --bs-gray: #9aa1a7;
-  --bs-gray-dark: #51565b;
+  --bs-primary: #FF5722; /* Naranja vibrante */
+  --bs-secondary: #FFC107; /* Amarillo intenso */
+  --bs-black: #263238; /* Azul marino profundo */
+  --bs-light: #FFFDE7; /* Amarillo pálido */
+  --bs-dark: #212529; /* Negro clásico */
+  --bs-gray: #9E9E9E; /* Gris moderno */
+  --bs-gray-dark: #616161; /* Gris oscuro */
 
-  --bs-primary-rgb: 140, 144, 126;
-  --bs-secondary-rgb: 108, 117, 125;
-  --bs-black-rgb: 17, 17, 17;
-  --bs-light-rgb: 241, 241, 240;
+  --bs-primary-rgb: 255, 87, 34;
+  --bs-secondary-rgb: 255, 193, 7;
+  --bs-black-rgb: 38, 50, 56;
+  --bs-light-rgb: 255, 253, 231;
   --bs-dark-rgb: 33, 37, 41;
 
-  --bs-link-color: #111;
-  --bs-link-color-rgb: 17, 17, 17;
+  --bs-link-color: #FF5722; /* Naranja vibrante */
+  --bs-link-color-rgb: 255, 87, 34;
   --bs-link-decoration: underline;
-  --bs-link-hover-color: #111;
-  --bs-link-hover-color-rgb: 17, 17, 17;
+  --bs-link-hover-color: #FFC107; /* Amarillo intenso */
+  --bs-link-hover-color-rgb: 255, 193, 7;
 }
+
+
 
 body {
   letter-spacing: 0.03rem;
@@ -240,23 +242,26 @@ a {
 
 /* form control */
 .form-control:focus {
-  border-color: #ccc;
-  box-shadow: 0 0 0 0.25rem rgba(200, 200, 200, .25);
+  border-color: #FF5722; /* Naranja vibrante */
+  box-shadow: 0 0 0 0.25rem rgba(255, 87, 34, 0.25); /* Naranja con transparencia */
 }
+
 
 /* dark theme */
 [data-bs-theme=dark] body {
   color-scheme: dark;
 
-  --heading-color: #fff;
-  --bs-link-color: #fff;
-  --bs-link-hover-color: #fff;
-  --bs-link-color-rgb: 255, 255, 255;
-  --bs-link-hover-color-rgb: 255, 255, 255;
-  --bs-body-color: #d1d1d1;
-  --bs-body-bg: #111;
-  --bs-body-bg-rgb: 17, 17, 41;
+  --heading-color: #FFC107; /* Amarillo intenso */
+  --bs-link-color: #FFC107; /* Amarillo intenso */
+  --bs-link-hover-color: #FF5722; /* Naranja vibrante */
+  --bs-link-color-rgb: 255, 193, 7;
+  --bs-link-hover-color-rgb: 255, 87, 34;
+
+  --bs-body-color: #B0BEC5; /* Gris claro */
+  --bs-body-bg: #263238; /* Azul marino profundo */
+  --bs-body-bg-rgb: 38, 50, 56;
 }
+
 
 [data-bs-theme=dark] .dropdown-item {
   --bs-dropdown-link-color: var(--bs-light);
@@ -304,14 +309,7 @@ a {
   overflow: hidden;
 }
 
-/* .slideshow .swiper-slide {
-  background-position-x: -300px;
-  transition: background-position-x 1.6s ease-out;
-  background-repeat: no-repeat;background-size: cover;
-}
-.slideshow .swiper-slide.swiper-slide-active {
-  background-position-x: 0px;
-} */
+
 .slideshow .swiper-slide {
   /* background-size: 100%; */
   background-position: center;
@@ -321,9 +319,6 @@ a {
   transition: background-size 1s ease-in-out;
 }
 
-/* .slideshow .swiper-slide.swiper-slide-active {
-  background-size: 120%;
-} */
 
 /* fade in */
 .slideshow.fade-in .swiper-slide .banner-content {
@@ -366,18 +361,6 @@ a {
 }
 
 /* swiper slide-clip */
-
-.image-holder {
-  width: 100%; /* Ajusta el ancho al 100% del contenedor */
-  height: 200px; /* Ajusta la altura según sea necesario */
-  overflow: hidden; /* Oculta cualquier parte de la imagen que se salga del contenedor */
-}
-
-.image-holder img {
-  width: 100%; /* Ajusta el ancho al 100% del contenedor */
-  height: 100%; /* Ajusta la altura al 100% del contenedor */
-  object-fit: cover; /* Asegura que la imagen se recorte para llenar el contenedor */
-}
 
 .slide-clip .swiper-slide .image-holder img {
   transform: scale(1.2);
@@ -482,17 +465,13 @@ a {
   }
 }
 
-/*@keyframes down-leave {
-  0% { clip-path: inset(0); }
-  100% { clip-path: inset(100% 0 0 0); }
-}*/
+
 .swipe-up {
   --delay: 0.05s;
 }
 
 .swipe-up {
   animation-delay: 1s;
-  /* animation-delay: data(swipe-delay); */
 }
 
 /* Text Effects */
@@ -567,70 +546,6 @@ a {
 .aos-animate .txt-fx.zoom .letter {
   transform: scale(1);
 }
-
-/* .txt-fx .letter:nth-child(1) {
-  transition-delay: calc(var(--delay) * 1);
-}
-
-.txt-fx .letter:nth-child(2) {
-  transition-delay: calc(var(--delay) * 2);
-}
-
-.txt-fx .letter:nth-child(3) {
-  transition-delay: calc(var(--delay) * 3);
-}
-
-.txt-fx .letter:nth-child(4) {
-  transition-delay: calc(var(--delay) * 4);
-}
-
-.txt-fx .letter:nth-child(5) {
-  transition-delay: calc(var(--delay) * 5);
-}
-
-.txt-fx .letter:nth-child(6) {
-  transition-delay: calc(var(--delay) * 6);
-}
-
-.txt-fx .letter:nth-child(7) {
-  transition-delay: calc(var(--delay) * 7);
-}
-
-.txt-fx .letter:nth-child(8) {
-  transition-delay: calc(var(--delay) * 8);
-}
-
-.txt-fx .letter:nth-child(9) {
-  transition-delay: calc(var(--delay) * 9);
-}
-
-.txt-fx .letter:nth-child(10) {
-  transition-delay: calc(var(--delay) * 10);
-}
-
-.txt-fx .letter:nth-child(11) {
-  transition-delay: calc(var(--delay) * 11);
-}
-
-.txt-fx .letter:nth-child(12) {
-  transition-delay: calc(var(--delay) * 12);
-}
-
-.txt-fx .letter:nth-child(13) {
-  transition-delay: calc(var(--delay) * 13);
-}
-
-.txt-fx .letter:nth-child(14) {
-  transition-delay: calc(var(--delay) * 14);
-}
-
-.txt-fx .letter:nth-child(15) {
-  transition-delay: calc(var(--delay) * 15);
-}
-
-.txt-fx .letter:nth-child(16) {
-  transition-delay: calc(var(--delay) * 16);
-} */
 
 
 /** Search Popup
