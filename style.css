@@ -292,6 +292,13 @@ a {
   transition: background-color 0.6s ease-out;
 }
 
+.brand-text {
+  font-size: 45px;
+  margin-top: 45px;
+  margin-left: 45px;
+  line-height: 45px;
+}
+
 /* slideshow */
 .slideshow {
   overflow: hidden;
