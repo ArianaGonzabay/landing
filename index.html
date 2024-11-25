@@ -752,50 +752,63 @@
     </div>
   </section>
 
-  <!--Testimonios-->
-
-  <section class="testimonials py-5 bg-light">
+<!-- Testimonios -->
+<section class="testimonials py-5 bg-light">
+  <div class="container">
     <div class="section-header text-center mt-5">
-      <h3 class="section-title">Nuestros Clientes Aman Ready Meals</h3>
+      <h3 class="section-title fw-bold">Nuestros Clientes Aman Ready Meals</h3>
+      <p>La satisfacción de nuestros clientes, nos motiva a seguir ofreciendo lo mejor.</p>
     </div>
     <div class="swiper testimonial-swiper overflow-hidden my-5">
-      <div class="swiper-wrapper d-flex">
+      <div class="swiper-wrapper">
         <div class="swiper-slide">
-          <div class="testimonial-item text-center">
-            <blockquote>
-              <p>“Los raviolis de espinaca fueron una maravilla, con una textura y sabor exquisitos. ¡Sin duda volveré a pedir!.”</p>
-              <div class="review-title text-uppercase">- Sofía Gómez, amante de la comida italiana</div>
+          <div class="testimonial-item text-center p-4 shadow-sm bg-white rounded">
+            <blockquote class="blockquote mb-4">
+              <p class="fs-5 fst-italic">“Los raviolis de espinaca fueron una maravilla, con una textura y sabor exquisitos. ¡Sin duda volveré a pedir!”</p>
             </blockquote>
+            <img src="https://via.placeholder.com/100" alt="Foto de Sofía Gómez" class="rounded-circle mb-3">
+            <footer class="testimonial-name text-uppercase fw-bold">Sofía Gómez</footer>
+            <small class="text-muted d-block">Amante de la comida italiana</small>
           </div>
         </div>
         <div class="swiper-slide">
-          <div class="testimonial-item text-center">
-            <blockquote>
-              <p>“La variedad de opciones saludables me dejó impresionado. Los wraps de quinoa son mis favoritos. ¡Deliciosos y ligeros!.”</p>
-              <div class="review-title text-uppercase">-Luis Fernández, entusiasta de la vida saludable</div>
+          <div class="testimonial-item text-center p-4 shadow-sm bg-white rounded">
+            <blockquote class="blockquote mb-4">
+              <p class="fs-5 fst-italic">“La variedad de opciones saludables me dejó impresionado. Los wraps de quinoa son mis favoritos. ¡Deliciosos y ligeros!”</p>
             </blockquote>
+            <img src="https://via.placeholder.com/100" alt="Foto de Luis Fernández" class="rounded-circle mb-3">
+            <footer class="testimonial-name text-uppercase fw-bold">Luis Fernández</footer>
+            <small class="text-muted d-block">Entusiasta de la vida saludable</small>
           </div>
         </div>
         <div class="swiper-slide">
-          <div class="testimonial-item text-center">
-            <blockquote>
-              <p>“Probar el ceviche ecuatoriano de Ready Meals fue como regresar a casa. ¡Auténtico y fresco, simplemente perfecto!.”</p>
-              <div class="review-title text-uppercase">Ana Hernández, ecuatoriana en el extranjero</div>
+          <div class="testimonial-item text-center p-4 shadow-sm bg-white rounded">
+            <blockquote class="blockquote mb-4">
+              <p class="fs-5 fst-italic">“Probar el ceviche ecuatoriano de Ready Meals fue como regresar a casa. ¡Auténtico y fresco, simplemente perfecto!”</p>
             </blockquote>
+            <img src="https://via.placeholder.com/100" alt="Foto de Ana Hernández" class="rounded-circle mb-3">
+            <footer class="testimonial-name text-uppercase fw-bold">Ana Hernández</footer>
+            <small class="text-muted d-block">Ecuatoriana en el extranjero</small>
           </div>
         </div>
         <div class="swiper-slide">
-          <div class="testimonial-item text-center">
-            <blockquote>
-              <p>“¡El sushi de Ready meals es espectacular! Ingredientes frescos y presentación impecable. Un diez de diez”</p>
-              <div class="review-title text-uppercase">Martín Cobos, fanático de la comida asiática</div>
+          <div class="testimonial-item text-center p-4 shadow-sm bg-white rounded">
+            <blockquote class="blockquote mb-4">
+              <p class="fs-5 fst-italic">“¡El sushi de Ready Meals es espectacular! Ingredientes frescos y presentación impecable. Un diez de diez.”</p>
             </blockquote>
+            <img src="https://via.placeholder.com/100" alt="Foto de Martín Cobos" class="rounded-circle mb-3">
+            <footer class="testimonial-name text-uppercase fw-bold">Martín Cobos</footer>
+            <small class="text-muted d-block">Fanático de la comida asiática</small>
           </div>
         </div>
       </div>
     </div>
     <div class="testimonial-swiper-pagination d-flex justify-content-center mb-5"></div>
-  </section>
+  </div>
+</section>
+
+
+
 
  
   <!--Blogs-->
@@ -882,99 +895,101 @@
     </div>
   </section>
 
+
+  <!--Suscripcion-->
   <section class="newsletter bg-light" style="background: url(images/pattern-bg.png) no-repeat;">
     <div class="container">
-      <div class="row justify-content-center">       
-        <!-- DIV contenedor del formulario -->
+      <div class="row justify-content-center">
+        <!-- Formulario de suscripción -->
         <div class="col-md-8 py-5 my-5">
-          <div class="subscribe-header text-center pb-3">
+          <div class="subscribe-header text-center pb-4">
             <h3 class="section-title text-uppercase">¡Descubre el mundo de las Ready Meals!</h3>
-          <p class="lead mb-4">Únete a nuestra comunidad foodie y obtén:</p>
-          <ul class="list-unstyled text-start mb-4">
-            <li class="mb-2">✓ Recetas exclusivas de comidas preparadas</li>
-            <li class="mb-2">✓ Tips para organizar tus comidas semanales</li>
-            <li class="mb-2">✓ 10% de descuento en tu primera compra</li>
-            <li class="mb-2">✓ Guías de alimentación saludable</li>
-          </ul>
-        </div>
-          <form id="form" class="d-flex flex-wrap gap-2">
-            <input type="text" name="email" placeholder="Tu correo electrónico" class="form-control form-control-lg">
-            <button class="btn btn-dark btn-lg text-uppercase w-100">Suscribirme</button>
+            <p class="lead mb-4">Únete a nuestra comunidad foodie y obtén:</p>
+            <ul class="list-unstyled text-start mb-4">
+              <li class="mb-2">✓ Recetas exclusivas de comidas preparadas</li>
+              <li class="mb-2">✓ Tips para organizar tus comidas semanales</li>
+              <li class="mb-2">✓ 10% de descuento en tu primera compra</li>
+              <li class="mb-2">✓ Guías de alimentación saludable</li>
+            </ul>
+          </div>
+          
+          <form id="form" class="newsletter-form">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <input 
+                  type="text" 
+                  name="nombre" 
+                  class="form-control form-control-lg" 
+                  placeholder="Tu nombre"
+                  required
+                >
+              </div>
+              <div class="col-md-6">
+                <input 
+                  type="email" 
+                  name="email" 
+                  class="form-control form-control-lg" 
+                  placeholder="Tu correo electrónico"
+                  required
+                >
+              </div>
+              <div class="col-12">
+                <p>¿Qué tipo de comidas te interesan más?</p>
+                <select class="form-select form-select-lg" name="preferencias" required>
+                    <option value="" disabled selected>Selecciona una opción</option>
+                    <option value="Comida Ecuatoriana">Comida Ecuatoriana</option>
+                    <option value="Comida Italiana">Comida Italiana</option>
+                    <option value="Comida Saludable">Comida Saludable</option>
+                    <option value="Comida Asiática">Comida Asiática</option>
+                    <option value="Piqueos">Piqueos</option>
+                </select>
+            </div>
+              <div class="col-12">
+                <div class="form-check">
+                  <input 
+                    class="form-check-input" 
+                    type="checkbox" 
+                    name="terminos" 
+                    id="terminos" 
+                    required
+                  >
+                  <label class="form-check-label" for="terminos">
+                    Acepto recibir comunicaciones de Ready Meals
+                  </label>
+                </div>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary btn-lg w-100 text-uppercase fw-bold">
+                  ¡Quiero recibir ofertas exclusivas!
+                </button>
+              </div>
+              <div class="col-12 text-center">
+                <small class="text-muted">
+                  No compartiremos tu información con nadie más.
+                </small>
+              </div>
+            </div>
           </form>
         </div>
-
-        <!-- Suscribers - START -->
-        <div class="col-md-4 py-5 my-5">
-          <h4 class="element-title text-capitalize my-3">Suscriptores diarios</h4>
-          <table class="table table-hover table-light table-borderless">
-            <thead>
-              <tr>
-                <th scope="col">#</th>
-                <th scope="col">Día</th>
-                <th scope="col">Suscriptores</th>
-              </tr>
-            </thead>
-            <tbody id="subscribers">
-         
-            </tbody>
-          </table>
-        </div>
-        <!-- Suscribers - END -->
-
-      </div>
+<!-- Estadísticas de suscriptores -->
+<div class="col-md-4 py-5 my-5">
+  <div class="card shadow-sm">
+    <div class="card-body">
+      <h4 class="text-center mb-4">Preferencias de nuestra comunidad</h4>
+      <table class="table table-hover">
+        <thead class="table-light">
+          <tr>
+            <th>Preferencia</th>
+            <th>Suscriptores</th>
+          </tr>
+        </thead>
+        <tbody id="subscribers">
+          <!-- El contenido de la tabla se llenará dinámicamente con JavaScript -->
+        </tbody>
+      </table>
     </div>
-  </section>
-
-
-  <section class="instagram position-relative">
-    <div class="d-flex justify-content-center w-100 position-absolute bottom-0 z-1">
-      <a href="https://www.instagram.com/arianagzb/" class="btn btn-dark px-5">Síguenos en Instagram</a>
-    </div>
-    <div class="row g-0">
-      <div class="col-6 col-sm-4 col-md-2">
-        <div class="insta-item">
-          <a href="https://www.instagram.com/arianagzb/" target="_blank">
-            <img src="/images/plato1.jpg" alt="Plato" class="insta-image img-fluid">
-          </a>
-        </div>
-      </div>
-      <div class="col-6 col-sm-4 col-md-2">
-        <div class="insta-item">
-          <a href="https://www.instagram.com/arianagzb/" target="_blank">
-            <img src="/images/plato2.jpg" alt="Plato" class="insta-image img-fluid">
-          </a>
-        </div>
-      </div>
-      <div class="col-6 col-sm-4 col-md-2">
-        <div class="insta-item">
-          <a href="https://www.instagram.com/arianagzb/" target="_blank">
-            <img src="/images/plato3.webp" alt="Plato" class="insta-image img-fluid">
-          </a>
-        </div>
-      </div>
-      <div class="col-6 col-sm-4 col-md-2">
-        <div class="insta-item">
-          <a href="https://www.instagram.com/arianagzb/" target="_blank">
-            <img src="/images/plato4.jpg" alt="Plato" class="insta-image img-fluid">
-          </a>
-        </div>
-      </div>
-      <div class="col-6 col-sm-4 col-md-2">
-        <div class="insta-item">
-          <a href="https://www.instagram.com/arianagzb/" target="_blank">
-            <img src="/images/plato5.jpg" alt="Plato" class="insta-image img-fluid">
-          </a>
-        </div>
-      </div>
-      <div class="col-6 col-sm-4 col-md-2">
-        <div class="insta-item">
-          <a href="https://www.instagram.com/arianagzb/" target="_blank">
-            <img src="/images/plato6.jpg" alt="Plato" class="insta-image img-fluid">
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
+  </div>
+</div>
 
   <footer id="footer" class="mt-5">
     <div class="container">

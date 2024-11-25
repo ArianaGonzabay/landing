@@ -366,6 +366,19 @@ a {
 }
 
 /* swiper slide-clip */
+
+.image-holder {
+  width: 100%; /* Ajusta el ancho al 100% del contenedor */
+  height: 200px; /* Ajusta la altura según sea necesario */
+  overflow: hidden; /* Oculta cualquier parte de la imagen que se salga del contenedor */
+}
+
+.image-holder img {
+  width: 100%; /* Ajusta el ancho al 100% del contenedor */
+  height: 100%; /* Ajusta la altura al 100% del contenedor */
+  object-fit: cover; /* Asegura que la imagen se recorte para llenar el contenedor */
+}
+
 .slide-clip .swiper-slide .image-holder img {
   transform: scale(1.2);
   transition: transform 1s ease-in-out;
@@ -797,6 +810,7 @@ a {
 /* Swiper */
 /* - Swiper Slide Arrows 1
 ------------------------------------------------------------- */
+
 .icon-arrow {
   position: absolute;
   top: 50%;
