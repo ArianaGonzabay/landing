@@ -1,7 +1,6 @@
 const databaseURL = 'https://landing-b5875-default-rtdb.firebaseio.com/coleccion.json';
 
 let sendData = () => {  
-    // Obtén los datos del formulario
     const formData = new FormData(form);
     const data = Object.fromEntries(formData.entries());
     
